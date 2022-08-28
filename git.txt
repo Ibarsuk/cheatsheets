@@ -1,0 +1,19 @@
+git add
+git commit -a -m ""
+git commit --amend -m "" - добавить к коммиту
+git checkout <file> - отмена изменений в файле до добавления
+git restore --staged <file> - отмена изменений в файле, добавленном к коммиту
+git revert <ветка> - обратный коммит
+git reset --hard <ветка> - сброс до коммита
+
+git checkout -b <branch>
+git merge <branch>
+git rebase <branch> - из указанной в текущую
+git clone <repo> <name>
+git branch --track <name> origin/<branch> - удаленная ветка, отслеживающая оригинальную
+git remote add <name> <repo path> - Добавить репозиторий в качестве удаленного
+
+git branch -a - показать все ветки
+git fetch
+git pull
+git push <to> <from>
