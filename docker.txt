@@ -1,0 +1,24 @@
+docker
+
+ps -a  показать все контейнеры
+images показать образы
+run <options> <name>:<version> создать и запустить контейнер
+	-i interactive
+	-t terminal
+	-d запуск в фоне
+	--name <name> задать имя
+	-p <host-port>:<container-port> публикация порта
+	-v <host-path>:<container-path> подключение тома
+	--rm удаление при остановке
+pull <name>:<version> скачать образ
+rm <id/name> удалить контейнер 
+stop <id/name> остановить
+start <id/name> запустить
+kill <id/name> остановить принудительно
+container prune удалить все контейнеры
+container inspect <id/name> вывод информации о контейнере
+exec <options> <id/name> <process> дополнительный процесс в запущенном контейнере
+
+build <path> сборка образа
+	-f <name> имя файла
+	-t <name>:<tag> имя образа и тег
